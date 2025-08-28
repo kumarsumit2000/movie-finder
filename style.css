@@ -1,0 +1,95 @@
+body{
+    font-family: Arial, sans-serif;
+    background-color: #181717;
+    color: #ffffff;
+    margin: 0;
+    padding: 0; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+ width: 80%;
+ max-width: 1400px;
+ padding: 50px 20px;
+ display: flex;
+ flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+.search{
+    margin-bottom: 20px;
+    padding: 30px;
+    background: #292626;
+    border-radius: 15px;
+    width: 100%;
+}
+.search input[type="text"]{
+    width: 80%;
+    padding: 10px;
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+}
+.search button{
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #e50914;
+    color: white;
+    cursor: pointer;
+    margin-left: 10px;
+}
+#movieDetails{
+    margin-top: 50px;
+    padding: 30px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+#movieDetails a{
+    text-decoration: none;
+    color: white;
+    text-align: center;
+}
+.movies{
+    width: 300px;
+    height: 450px;
+    /* background-image: url(); */
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: 0 4px 8px rgba(167, 166, 166, 0.2);
+    border-radius: 15px;
+    box-sizing: border-box;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+.info{
+    width: 100%;
+    background: #2f2b2b;
+    position: absolute; 
+    bottom: -60px;
+}
+.movies .info div{
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+.movies:hover .info{
+    bottom: 0px;
+    transition: bottom 0.5s ease-in-out;
+}
